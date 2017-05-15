@@ -25,13 +25,23 @@
 # p letter_count("Jana")
 
 # Looping - 3
-def mock_me
-	input = ""
-	until input.downcase == "quit" || input.downcase == "q"
-		p "please type an input!"
-		input = gets.chomp.strip
-		puts input
-	end
+# def mock_me
+# 	input = ""
+# 	until input.downcase == "quit" || input.downcase == "q"
+# 		p "please type an input!"
+# 		input = gets.chomp.strip
+# 		puts input
+# 	end
+# end
+
+# mock_me
+
+# Using Array#map - 1
+def multiply_by ( arr, numb)
+	arr.map! {  |n| n = n * numb }
+		
+	# end
+	puts arr
 end
 
-mock_me
+multiply_by([1,5,10], 10)
