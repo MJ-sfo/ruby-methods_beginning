@@ -48,29 +48,31 @@
 
 
 # Methods 1
-# def factorial(numb)
-# 	if (numb < 2) 
-# 		p "line 53 - numb is: #{numb}"
-# 		numb
-# 	else
-# 		p "line 56 - numb is: #{numb}"
-# 		numb * factorial(numb  - 1)
-# 	end
-# end
-
-# p factorial(4)
-
-
-# Methods 2 - Write a method to check if a number is a palindrome
-def palindrome numb
-	arr = numb.to_s.split("")
-	if arr == arr.reverse
-		true
+def factorial(numb)
+	if (numb <0 )
+		"error - wrong imput"
+	elsif (numb < 2) 
+		p "line 53 - numb is: #{numb}"
+		1
 	else
-		false
+		p "line 56 - numb is: #{numb}"
+		numb * factorial(numb  - 1)
 	end
 end
 
-p palindrome(101)
-p palindrome(15)
+p factorial(-3)
+
+
+# Methods 2 - Write a method to check if a number is a palindrome
+# def palindrome numb
+# 	arr = numb.to_s.split("")
+# 	if arr == arr.reverse
+# 		true
+# 	else
+# 		false
+# 	end
+# end
+
+# p palindrome(101)
+# p palindrome(15)
  
