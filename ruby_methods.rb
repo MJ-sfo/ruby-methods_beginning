@@ -37,11 +37,26 @@
 # mock_me
 
 # Using Array#map - 1
-def multiply_by ( arr, numb)
-	arr.map! {  |n| n = n * numb }
+# def multiply_by ( arr, numb)
+# 	arr.map! {  |n| n = n * numb }
 		
-	# end
-	puts arr
+# 	# end
+# 	puts arr
+# end
+
+# multiply_by([1,5,10], 10)
+
+
+# Methods 1
+def factorial(numb)
+	if (numb < 2) 
+		p "line 53 - numb is: #{numb}"
+		numb
+	else
+		p "line 56 - numb is: #{numb}"
+		numb * factorial(numb  - 1)
+	end
 end
 
-multiply_by([1,5,10], 10)
+p factorial(4)
+
